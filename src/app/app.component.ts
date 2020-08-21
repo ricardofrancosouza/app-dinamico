@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentItem } from './cors/model/content.item';
-import { CoreService } from './cors/core.service';
+import { CoreService } from './cors/services/core.service';
 
 @Component({
   selector: 'app-root',

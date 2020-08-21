@@ -1,6 +1,7 @@
-import { Injectable } from '@angular/core';
-import { ContentItem } from './model/content.item';
-import { TesteComponent } from '../component/teste/teste.component';
+import { Injectable, ComponentFactoryResolver } from '@angular/core';
+import { ContentItem } from '../model/content.item';
+import { TesteComponent } from '../../component/teste/teste.component';
+
 
 @Injectable({
   providedIn: 'root'
@@ -16,5 +17,7 @@ export class CoreService {
             new ContentItem(TesteComponent,  {name: 'Clark Kent', bio: 'Eu sou fã do Batman'}),
       ];
   }
+
+ 
   
 }
