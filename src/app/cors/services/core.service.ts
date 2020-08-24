@@ -14,9 +14,12 @@ export class CoreService {
 
   public getComponentes(){
       return[
-            new ContentItem(TesteComponent,  {name: 'Bruce Wayne', bio: 'Eu sou o Batman'}),
-            new ContentItem(TesteComponent,  {name: 'Clark Kent', bio: 'Eu sou fã do Batman'}),
-            new ContentItem(FormPersonalizadoComponent,  {inputList:[{label:'teste', type:'number'}]}),
+            new ContentItem(TesteComponent,  {name: 'Name teste 1', bio: 'teste 1'}),
+            new ContentItem(TesteComponent,  {name: 'Name teste 1', bio: 'teste 1'}),
+            new ContentItem(TesteComponent,  {name: 'Name teste 2', bio: 'Teste 2'}),
+            new ContentItem(FormPersonalizadoComponent,  {inputList:[
+                                                                      {label:'teste', type:'number'}
+                                                                      ]}),
             new ContentItem(FormPersonalizadoComponent,  {inputList:[{label:'teste', type:'password'}]})
       ];
   }

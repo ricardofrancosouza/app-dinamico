@@ -1,10 +1,12 @@
 import { Component, OnInit, Input, ViewChild, ComponentFactoryResolver } from '@angular/core';
 import { Content } from '@angular/compiler/src/render3/r3_ast';
-import { ContentItem } from '../model/content.item';
-import { ContentDirective } from '../model/content.directive';
+
+
 import { TesteComponent } from 'src/app/component/teste/teste.component';
-import { CoreService } from '../services/core.service';
-import { FactoryComponentsService } from '../services/factory-components.service';
+
+import { ContentItem } from 'src/app/cors/model/content.item';
+import { ContentDirective } from 'src/app/cors/model/content.directive';
+import { FactoryComponentsService } from 'src/app/cors/services/factory-components.service';
 
 @Component({
   selector: 'app-core',
