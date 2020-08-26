@@ -6,7 +6,7 @@ import { interfaceComponent } from '../inteface.component';
   templateUrl: './input-personalizado.component.html',
   styleUrls: ['./input-personalizado.component.css']
 })
-export class InputPersonalizadoComponent implements OnInit, interfaceComponent {
+export class InputPersonalizadoComponent implements OnInit {
 
   desLabel:string;
   typeInput:string;

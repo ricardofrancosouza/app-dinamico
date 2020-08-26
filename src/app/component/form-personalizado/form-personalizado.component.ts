@@ -18,13 +18,11 @@ export class FormPersonalizadoComponent implements OnInit, interfaceComponent {
   componentsDinamicos: ContentItem[];
   @ViewChild(ContentDirective, {static: true}) componentInject: ContentDirective;
   ngOnInit() {
-    debugger
     this.componentsDinamicos = this.getContentType(); 
-    this.factoryComponentsService.createComponetDinamic(this.componentsDinamicos, this.componentInject)
+   this.factoryComponentsService.createComponetDinamic(this.componentsDinamicos, this.componentInject)
   }
 
   getContentType(){
-    debugger
     let auxItemArray: ContentItem[]=[];
     for(let aux of this.data.inputList){
       auxItemArray.push(new ContentItem(InputPersonalizadoComponent,  aux),)
