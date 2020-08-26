@@ -8,14 +8,11 @@ import { interfaceComponent } from '../inteface.component';
 })
 export class InputPersonalizadoComponent implements OnInit {
 
-  desLabel:string;
-  typeInput:string;
+
   constructor() { }
   @Input()data: any;
 
   ngOnInit() {
-    this.desLabel = this.data.label;
-    this.typeInput = this.data.type;
   }
 
 }

@@ -5,6 +5,7 @@ import { InterfaceDefault } from 'src/app/component/model/interface.default';
 import { ContentPageComponent } from 'src/app/component/content-page/content-page.component';
 import { ContentInfoComponent } from 'src/app/component/content-info/content-info.component';
 import { ItemContentComponent } from 'src/app/component/item-content/item-content.component';
+import { InputPersonalizadoComponent } from 'src/app/component/input-personalizado/input-personalizado.component';
 
 @Injectable({
   providedIn: 'root'
@@ -41,6 +42,8 @@ export class FactoryComponentsService {
       return new ContentItem(ContentInfoComponent,  obj);
     }else if(obj.idComponent == 'ItemContentComponent'){
       return new ContentItem(ItemContentComponent,  obj);
+    }else if(obj.idComponent == 'InputPersonalizadoComponent'){
+      return new ContentItem(InputPersonalizadoComponent,  obj);
     }
   }
 }

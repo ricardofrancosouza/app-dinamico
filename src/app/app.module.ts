@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContentPageComponent } from './component/content-page/content-page.component';
 import { ContentInfoComponent } from './component/content-info/content-info.component';
 import { ItemContentComponent } from './component/item-content/item-content.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ItemContentComponent } from './component/item-content/item-content.comp
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   entryComponents: [ 
     FormPersonalizadoComponent,

@@ -4,6 +4,8 @@ import { ContentItem } from 'src/app/cors/model/content.item';
 import { FactoryComponentsService } from 'src/app/cors/services/factory-components.service';
 import { ContentDirective } from 'src/app/cors/model/content.directive';
 
+
+
 @Component({
   selector: 'app-content-page',
   templateUrl: './content-page.component.html',
@@ -17,8 +19,8 @@ export class ContentPageComponent implements OnInit, interfaceComponent {
   
 
   ngOnInit() {
-    
-    this.componentsDinamicos = this.factoryComponentsService.getContentType(this.data.contentPageInfo);
+    debugger
+    this.componentsDinamicos = this.factoryComponentsService.getContentType(this.data.inputList);
     this.factoryComponentsService.createComponetDinamic(this.componentsDinamicos, this.componentInject);
   }
 

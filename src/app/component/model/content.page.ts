@@ -5,4 +5,5 @@ export interface ContentPage extends InterfaceDefault{
     tituloContentPage:string,
     descContentPage:string,
     contentPageInfo:any[];
+    inputList:any[];
 }
